@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pro.css">
+    <script src="pro.js"></script>
+</head>
+<body>
+        <input type="radio" id="poundstokg" name="converter" value="PoundToKg" onchange="radiocheck()" checked>
+        <label for="poundstokg">PoundToKg</label>
+        <input type="radio" id="kgtopound" name="converter" value="KgToPound" onchange="radiocheck()">
+        <label for="KgToPound">KgToPound</label><br>
+
+    <div id="poundsTokg_divId">
+        
+            
+        <br>
+        <label>Weight Converter (Pounds to Kgs)</label>
+        <br>
+        <br>
+        <label>Enter the Weight in Pounds</label>
+        <br>
+        <br>
+        <label>Pounds :-</label>
+        <input type="text" id="poundInputId" onchange="poundTokg()">
+        <br>
+        <br>
+        <label>Your weight in kg is :- </label>
+        <label id="result"></label>
+
+    </div>
+
+    <div id="kgtopounds_divId"  style = "display: none;">
+            
+        <br>
+        <label>Weight Converter (Kgs to Pound)</label>
+        <br>
+        <br>
+        <label>Enter the Weight in kgs</label>
+        <br>
+        <br>
+        <label>Pounds :-</label>
+        <input type="text" id="kgInputId" onchange="kgTopound()">
+        <br>
+        <br>
+        <label>Your weight in Pounds is :- </label>
+        <label id="resultKg"></label>
+    </div>
+</body>
+</html>
